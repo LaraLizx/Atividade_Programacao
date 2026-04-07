@@ -17,6 +17,7 @@ public abstract class Curso {
     private String tipoDuracao;
     private String modalidade;
     private String status;
+    private List<Disciplinas> disciplinas = new ArrayList()<Disciplina>();
     
     public abstract void obterDisciplinas();
     public abstract void obterAlunosAtivos();
@@ -77,6 +78,7 @@ public abstract class Curso {
     public void setstatus(String _status) {
         status = _status;
     }
+    public abstract void realizarMatricula();
 }
 
 
